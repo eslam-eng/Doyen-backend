@@ -10,9 +10,11 @@ use Stancl\Tenancy\Database\Concerns\CentralConnection;
 
 class User extends Authenticatable
 {
+    use CentralConnection;
+
     /** @use HasFactory<\Database\Factories\Landlord\UserFactory> */
     use HasFactory, Notifiable;
-    use CentralConnection;
+
     /**
      * The attributes that are mass assignable.
      *

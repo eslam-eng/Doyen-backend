@@ -7,8 +7,5 @@ use App\Http\Requests\Tenant\LoginRequest;
 
 class LoginController extends Controller
 {
-    public function __invoke(LoginRequest $request)
-    {
-
-    }
+    public function __invoke(LoginRequest $request) {}
 }

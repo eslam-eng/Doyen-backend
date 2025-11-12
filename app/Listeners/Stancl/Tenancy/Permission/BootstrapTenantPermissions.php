@@ -16,6 +16,6 @@ class BootstrapTenantPermissions
         $permissionRegistrar->setRoleClass(Role::class);
 
         // Tenant-specific cache key
-        $permissionRegistrar->cacheKey = 'spatie.permission.cache.tenant.' . $event->tenancy->tenant->getTenantKey();
+        $permissionRegistrar->cacheKey = 'spatie.permission.cache.tenant.'.$event->tenancy->tenant->getTenantKey();
     }
 }

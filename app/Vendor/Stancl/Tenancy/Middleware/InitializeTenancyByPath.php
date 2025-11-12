@@ -5,14 +5,16 @@ namespace App\Vendor\Stancl\Tenancy\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
-use Stancl\Tenancy\Middleware\InitializeTenancyByPath as BaseInitializeTenancyByPath;
 use Stancl\Tenancy\Exceptions\RouteIsMissingTenantParameterException;
+use Stancl\Tenancy\Middleware\InitializeTenancyByPath as BaseInitializeTenancyByPath;
+
 class InitializeTenancyByPath extends BaseInitializeTenancyByPath
 {
     /**
      * Handle an incoming request.
      *
-     * @param \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response) $next
+     * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     *
      * @throws RouteIsMissingTenantParameterException
      */
     public function handle(Request $request, Closure $next)

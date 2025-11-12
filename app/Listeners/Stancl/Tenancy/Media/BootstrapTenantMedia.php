@@ -8,7 +8,6 @@ use Stancl\Tenancy\Events\TenancyBootstrapped;
 
 class BootstrapTenantMedia
 {
-
     /**
      * Handle the event.
      */

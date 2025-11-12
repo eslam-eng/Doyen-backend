@@ -16,5 +16,4 @@ class Role extends \Spatie\Permission\Models\Role
     protected $casts = [
         'is_active' => ActivationStatusEnum::class,
     ];
-
 }

@@ -12,7 +12,6 @@ class BaseFormRequest extends FormRequest
     /**
      * Handle a failed validation attempt.
      *
-     * @return void
      *
      * @throws \Illuminate\Http\Exceptions\HttpResponseException
      */

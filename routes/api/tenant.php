@@ -5,7 +5,6 @@ declare(strict_types=1);
 use App\Models\Tenant\User;
 use Illuminate\Support\Facades\Route;
 
-
 /*
 |--------------------------------------------------------------------------
 | Tenant Routes

@@ -8,7 +8,6 @@ use Stancl\Tenancy\Events\TenancyEnded;
 
 class RevertMediaToLandlord
 {
-
     /**
      * Handle the event.
      */

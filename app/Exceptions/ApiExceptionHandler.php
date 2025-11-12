@@ -15,7 +15,7 @@ class ApiExceptionHandler
 {
     public static function handle(Exception $e, Request $request): ?JsonResponse
     {
-        if (!$request->is('api/*')) {
+        if (! $request->is('api/*')) {
             return null; // Let Laravel handle non-API requests normally
         }
 

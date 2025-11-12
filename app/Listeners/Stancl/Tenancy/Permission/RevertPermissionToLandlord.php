@@ -8,7 +8,6 @@ use Stancl\Tenancy\Events\TenancyEnded;
 
 class RevertPermissionToLandlord
 {
-
     /**
      * Handle the event.
      */

@@ -24,7 +24,7 @@ class User extends Authenticatable
         'theme',
         'phone',
         'is_active',
-        'locale'
+        'locale',
     ];
 
     /**

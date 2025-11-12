@@ -14,7 +14,7 @@ class TenantsTableSeeder extends Seeder
     {
 
         $tenant = Tenant::create([
-            'id' => (string)\Str::uuid(),
+            'id' => (string) \Str::uuid(),
             'slug' => 'test',
         ]);
         $tenant->domains()->create(['domain' => $tenant->slug]);

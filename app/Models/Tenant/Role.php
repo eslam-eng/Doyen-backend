@@ -3,7 +3,6 @@
 namespace App\Models\Tenant;
 
 use App\Enum\ActivationStatusEnum;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Role extends \Spatie\Permission\Models\Role
 {
@@ -14,5 +13,4 @@ class Role extends \Spatie\Permission\Models\Role
     protected $casts = [
         'is_active' => ActivationStatusEnum::class,
     ];
-
 }
