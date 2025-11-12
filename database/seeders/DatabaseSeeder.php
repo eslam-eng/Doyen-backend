@@ -4,13 +4,10 @@ namespace Database\Seeders;
 
 use Database\Seeders\Landlord\TenantsTableSeeder;
 use Database\Seeders\Landlord\UsersTableSeeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
     /**
      * Seed the application's database.
      */

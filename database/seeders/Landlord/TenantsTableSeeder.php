@@ -16,7 +16,6 @@ class TenantsTableSeeder extends Seeder
         $tenant = Tenant::create([
             'id' => (string)\Str::uuid(),
             'slug' => 'test',
-            'tenancy_db_name' => 'tenant_test', // optional, let package generate name
         ]);
         $tenant->domains()->create(['domain' => $tenant->slug]);
     }
