@@ -2,12 +2,11 @@
 
 namespace Database\Seeders;
 
-use Database\Seeders\Landlord\TenantsTableSeeder;
-use Database\Seeders\Landlord\UsersTableSeeder;
+use Database\Seeders\Tenant\UsersTableSeeder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class TenantDatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
 
@@ -16,7 +15,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->call(TenantsTableSeeder::class);
         $this->call(UsersTableSeeder::class);
     }
 }

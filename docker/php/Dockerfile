@@ -29,6 +29,9 @@ RUN docker-php-ext-install \
 # Install Redis via PECL
 RUN pecl install redis && docker-php-ext-enable redis
 
+# Install Xdebug
+RUN pecl install xdebug && docker-php-ext-enable xdebug
+
 # Install Composer globally
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -46,6 +49,8 @@ RUN composer dump-autoload --optimize
 
 # Set permissions for storage and cache
 RUN chmod -R 775 storage bootstrap/cache
+
+COPY docker/php/conf.d/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 
 # Expose FPM port
 EXPOSE 9001

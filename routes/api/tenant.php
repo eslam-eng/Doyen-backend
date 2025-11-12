@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Models\Tenant\User;
 use Illuminate\Support\Facades\Route;
 
 
@@ -17,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['prefix' => 'auth', 'middleware' => 'guest'], function () {
-    Route::post('login');
+Route::get('/users', function () {
+    // This will automatically use the tenant database
+    return User::all();
 });
